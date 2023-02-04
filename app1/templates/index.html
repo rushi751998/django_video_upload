@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-<title>Hello, world!</title>
+<title>Index</title>
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
@@ -25,17 +25,9 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
         <button class="btn btn-success btn-lg">Upload</button>
         
         </form>
-        </div>
+
+
         
-        <hr>
-        {% for x in all %}
-        <h3 class="text-center mt-2 mb-2">{{x.caption}}</h3>
-        <video class="embed-responsive embed-responsive-16by9" controls="controls" >
-        <source src="{{x.video.url}}" type="video/mp4" />
-        </video>
-        {% endfor %}
-        
-        </div>
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

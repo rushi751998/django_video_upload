@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos Page</title>
+</head>
+<body>
+</div>
+        
+<hr>
+<h1>Video Uploaded Sucessfully</h1>
+{% for x in all %}
+<h3 class="text-center mt-2 mb-2">{{x.caption}}</h3>
+<video class="embed-responsive embed-responsive-16by9" controls="controls" >
+<source src="{{x.video.url}}" type="video/mp4" />
+</video>
+{% endfor %}
+
+</div>
+</body>
+</html>
