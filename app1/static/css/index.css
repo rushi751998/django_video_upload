@@ -1,9 +1,0 @@
-.form_container , .container2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.container2{
-    justify-content: flex-start;
-    margin-left: 100px;
-}

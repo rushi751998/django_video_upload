@@ -1,0 +1,80 @@
+.form ,.inputs{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .form h2{
+
+    padding-bottom: 25px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+ }
+ .inputs input{
+    margin-left: 20px;
+    
+ }
+ .form{
+    background-color: rgb(23, 133, 197);
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+ h2{
+    color: rgb(255, 255, 255);
+ }
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: rgb(207, 231, 245);
+}
+.video_container,.anayze_button{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+    
+}
+.heading  {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: cornflowerblue;
+}
+
+.video_container .video_specifications{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    padding:50px;
+   
+}
+
+.video_container .video_specifications .info{
+    display: flex;
+    align-items: center;
+}
+
+.video_container video {
+    height: 400px;
+    width: 700px;
+    
+}
+
+.checkbox{
+    margin-top: 50px;
+    
+}
+
+.anayze_button{
+    margin-bottom: 100px;
+}
+

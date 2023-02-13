@@ -2,30 +2,23 @@
 {% load static %}
 
 
-    {% block title %}Index{% endblock %}
-    {% block extra_head %}
-    <link rel="stylesheet" href="{% static 'css/index.css'  %}"> 
-    {% endblock %}
+{% block title %}Index{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/index1.css'  %}">
+{% endblock %}
 
-    {% block form %}
+{% block form %}
+<div class="form">
+    <form action="videos">
+        <h2>Date of Recording</h2>
+        <div class="inputs">
+            <input type="date">
+            <input type="submit">
+        </div>        
+    </form>
+</div>
+{% endblock %}
 
-    <div class="form_container">
-
-        <div class="mt-5">
-            <form action="." method="post" enctype="multipart/form-data">
-                {% csrf_token %}
-                {{form.as_p}}
-                <button class="btn btn-success ">Upload</button>
-            </form>
-        </div> 
-    </div>
-            <div class="container2">
-                <a href="videos"><button type="submit" class="btn btn-primary"> Go to videos </button></a> 
-    </div>
-            {% endblock %}
-
-            {% block scripts %}
-            <script src="{% static 'js/main.js' %}"></script>
-            {% endblock %}
-
-        
+{% block scripts %}
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

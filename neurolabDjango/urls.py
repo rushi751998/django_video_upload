@@ -8,7 +8,8 @@ urlpatterns =[
     path('admin/',admin.site.urls),
     path('',views.index),
     path('videos/',views.videos),
-    path('/index',views.index),
+    path('index/',views.index),
+    path('videos/'+'dashboard/',views.dashboard)
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
