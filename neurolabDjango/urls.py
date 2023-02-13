@@ -9,7 +9,11 @@ urlpatterns =[
     path('',views.index),
     path('videos/',views.videos),
     path('index/',views.index),
+<<<<<<< HEAD
     path('videos/'+'dashboard/',views.dashboard)
+=======
+    path('images/',views.images),
+>>>>>>> bf2c203a5e9f2da6725fa43eb2549d65bdaa8243
 ]
 if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT) 
